@@ -2,7 +2,7 @@ const crypto = require("crypto");
 const TRIVIAL_PARTITION_KEY = "0";
 const MAX_PARTITION_KEY_LENGTH = 256;
 
-export default deterministicPartitionKey = (event) => {
+exports.generatePartitionKey = (event) => {
   let candidate;
 
   // Check if partionKey property exists for given event object

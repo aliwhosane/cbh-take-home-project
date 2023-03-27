@@ -12,6 +12,8 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 
 Following changes were made to make the code more readable & less error prone
 
+Changed the name of the function to be explain better what it is doing and making it a verb.
+
 Since the file has only one function I made it a default export which would lead to cleaner import statements.
 
 I added comments to explain steps of the code and improve its readability.
