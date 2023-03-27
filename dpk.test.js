@@ -33,7 +33,7 @@ describe("generatePartitionKey", () => {
 
   // Test generating partition key from null or undefined candidate
   test("generates partition key from null or undefined candidate", () => {
-    const event = { data: null };
+    const event = null;
     const partitionKey = generatePartitionKey(event);
     expect(partitionKey).toBeDefined();
   });

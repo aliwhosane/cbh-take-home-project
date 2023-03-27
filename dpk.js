@@ -10,7 +10,9 @@ exports.generatePartitionKey = (event) => {
     candidate = event.partitionKey;
   } else {
     const data = JSON.stringify(event);
-    candidate = crypto.createHash("sha3-512").update(data).digest("hex");
+    candidate = data
+      ? crypto.createHash("sha3-512").update(data).digest("hex")
+      : undefined;
   }
 
   // Stringify candidate if not a string

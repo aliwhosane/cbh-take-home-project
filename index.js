@@ -1,3 +1,3 @@
 const { generatePartitionKey } = require("./dpk");
 
-console.log(generatePartitionKey());
+console.log(generatePartitionKey(21));
