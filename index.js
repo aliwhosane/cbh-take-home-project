@@ -1,3 +1,3 @@
-const {deterministicPartitionKey} = require("./dpk");
+const { generatePartitionKey } = require("./dpk");
 
-console.log(deterministicPartitionKey());
+console.log(generatePartitionKey());

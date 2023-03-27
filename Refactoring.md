@@ -16,10 +16,10 @@ Changed the name of the function to be explain better what it is doing and makin
 
 Since the file has only one function I made it a default export which would lead to cleaner import statements.
 
-I added comments to explain steps of the code and improve its readability.
+Added comments to explain steps of the code and improve its readability.
 
 Instead of multiple if statements I added a '?' check to make sure that event is not null or undefined before checking its properties.
 
-I defined TRIVIAL_PARTITION_KEY & MAX_PARTITION_KEY_LENGTH making it clearer that it is a function-level constant.
+Defined TRIVIAL_PARTITION_KEY & MAX_PARTITION_KEY_LENGTH outside the function, making it clearer that it is a function-level constant.
 
 I would further like to update the package.json to use import statements instead of require methods as they are much cleaner and easier to read
